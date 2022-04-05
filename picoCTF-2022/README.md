@@ -104,7 +104,8 @@ picoCTF{#########################}
 </pre>
 Hooray! We have a flag!
 <br/>
-We also can get the output by "Trying passing strings instead of number" as mentioned in "Hint"
+We also can get the flag by "Trying passing strings instead of number" as mentioned in "Hint"<br/>
+This works because of "strtol() function error" that says: In case no conversion was performed (no digits seen, and 0 returned)
 <pre>
 └─$ ./1.basic-file-exploit.out
 Hi, welcome to my echo chamber!
