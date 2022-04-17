@@ -1,8 +1,16 @@
 
 # picoCTF-2022
-Hi there, and Welcome to my picoCTF-2022 progress and writeups
+### Hi there, and Welcome to my picoCTF-2022 progress and writeups
 
+**Total Chalennges : 65**
+✔️Solved: 51
+❌Unsolved : 14 
 
+**Team rank: 677 from 7794 (Top 8%)**
+
+![image](https://user-images.githubusercontent.com/62214984/163713181-4492b90e-03a6-476b-a968-f44da82bb5ed.png)
+
+## The provided here flags are not genuine PicoCTF flags
 
 <details>
   <summary><h2> 1. basic-file-exploit ✔️ </h2></summary>
@@ -126,6 +134,8 @@ picoCTF{#########################}
 </pre>
 Hooray! We have a flag!
 </details>
+
+---
 
 
 
