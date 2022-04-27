@@ -137,7 +137,39 @@ Hooray! We have a flag!
 
 ---
 
+<details>
+  <summary><h2> 2. basic-mod1 ✔️ </h2></summary>
+  <h3>Description:</h3>
+	We found this weird message being passed around on the servers, we think we have a working decryption scheme.<br/>
+	Message:<br/> 
+	```202 137 390 235 114 369 198 110 350 396 390 383 225 258 38 291 75 324 401 142 288 397 ```<br/>
+	Take each number mod 37 and map it to the following character set:<br/>
+	0-25 is the alphabet (uppercase)<br/>
+	26-35 are the decimal digits<br/>
+	36 is an underscore<br/>
+	Wrap your decrypted message in the picoCTF flag format<br/>
+	<br/>
+  
+  > Hint1: Do you know what mod 37 means?
+	
+  > Hint2: mod 37 means modulo 37. It gives the remainder of a number after being divided by 37.
 
+  ----
+  <h3>Reconnaissance and Exploitation:</h3>
+	Go to <a href="https://www.dcode.fr/cipher-identifier">Chipher Identifier</a> to find a Modulo Cipher decoder.<br/>
+	Open <a href="https://www.dcode.fr/modulo-cipher">Modulo Cipher</a> from results, change modulo nr to 37 and insert the Message.<br/>
+	Take the output and using <a href="https://www.dcode.fr/substitution-cipher">Substitution Cipher</a> and map it to the character set from the description:<br/>
+	<pre>
+	0-25 is the alphabet (uppercase).
+	26-35 are the decimal digits.
+	36 is an underscore.</pre>
+	Wrap your decrypted message in the picoCTF flag format<br/>
+
+	picoCTF{R****_N_*0***_*E***3**}
+Hooray! We have a flag!
+</details>
+
+---
 
  Checkmarks:
 ✔️
