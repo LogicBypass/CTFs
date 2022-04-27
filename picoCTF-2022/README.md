@@ -141,8 +141,10 @@ Hooray! We have a flag!
   <summary><h2> 2. basic-mod1 ✔️ </h2></summary>
   <h3>Description:</h3>
 	We found this weird message being passed around on the servers, we think we have a working decryption scheme.<br/>
+	<br/>
 	Message:<br/> 
-	```202 137 390 235 114 369 198 110 350 396 390 383 225 258 38 291 75 324 401 142 288 397 ```<br/>
+	<i> 202 137 390 235 114 369 198 110 350 396 390 383 225 258 38 291 75 324 401 142 288 397 </i><br/>
+	<br/>
 	Take each number mod 37 and map it to the following character set:<br/>
 	0-25 is the alphabet (uppercase)<br/>
 	26-35 are the decimal digits<br/>
