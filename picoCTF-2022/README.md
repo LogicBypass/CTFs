@@ -5,6 +5,7 @@
 **Total Chalennges : 65**
 ✔️Solved: 51
 ❌Unsolved : 14 
+(completed 72.5%)
 
 **Team rank: 677 from 7794 (Top 8%)**
 
@@ -13,7 +14,7 @@
 ## The provided here flags are not genuine PicoCTF flags
 
 <details>
-  <summary><h2> 1. basic-file-exploit ✔️ </h2></summary>
+  <summary><h2> 1. basic-file-exploit | 100 points ✔️ </h2></summary>
   <h3>Description:</h3>
 	The program provided allows you to write to a file and read what you wrote from it. Try playing around with it and see if you can break it! <br/>
 	<s>Connect to the program with netcat:</s><br/> 
@@ -138,7 +139,7 @@ Hooray! We have a flag!
 ---
 
 <details>
-  <summary><h2> 2. basic-mod1 ✔️ </h2></summary>
+  <summary><h2> 2. basic-mod1 | 100 points ✔️ </h2></summary>
   <h3>Description:</h3>
 	We found this weird message being passed around on the servers, we think we have a working decryption scheme.<br/>
 	<br/>
@@ -167,7 +168,7 @@ Hooray! We have a flag!
 	36 is an underscore.</pre>
 	Wrap your decrypted message in the picoCTF flag format<br/>
 
-	picoCTF{R****_N_*0***_*E***3**}
+	picoCTF{R****_N_*0***_********}
 Hooray! We have a flag!
 </details>
 
