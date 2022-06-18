@@ -174,6 +174,45 @@ Hooray! We have a flag!
 
 ---
 
+<details>
+  <summary><h2> 3. basic-mod2 | 100 points ✔️ </h2></summary>
+  <h3>Description:</h3>
+  A new modular challenge!<br/>
+  Message:<br/> 
+  <i> 186 249 356 395 303 337 190 393 146 174 446 127 385 400 420 226 76 294 144 90 291 445 137 </i><br/>
+	<br/>
+  Take each number mod 41 and find the modular inverse for the result. Then map to the following character set:<br/>
+  1-26 are the alphabet<br/>
+  27-36 are the decimal digits<br/>
+  37 is an underscore<br/>
+	<br/>
+  Wrap your decrypted message in the picoCTF flag format (i.e. picoCTF{decrypted_message})<br/>
+  <br/>
+    
+  > Hint1: Do you know what the modular inverse is?<br/>
+  > Hint2: The inverse modulo z of x is the number, y that when multiplied by x is 1 modulo z.<br/>
+  > Hint3: It's recommended to use a tool to find the modular inverses.<br/>
+
+
+  ----
+  <h3>Exploitation:</h3>
+  
+  Go to <a href="https://www.dcode.fr/cipher-identifier">Chipher Identifier</a> to find a Modular Inverse decoder.<br/>
+  Open <a href="https://www.dcode.fr/modular-inverse">Modular Inverse</a> from results, change modulo nr to 41 and insert the Message one by one.<br/>
+  Take the output and using <a href="https://www.dcode.fr/substitution-cipher">Substitution Cipher</a> and map it to the character set from the description:<br/>
+
+    <pre>
+    0-25 is the alphabet (uppercase).
+    26-35 are the decimal digits.
+    36 is an underscore.</pre>
+  Wrap your decrypted message in the picoCTF flag format<br/>
+
+    picoCTF{1*V3R*3L*_H4*D_B7*B9*79}
+Hooray! We have a flag!
+</details>
+
+---
+
  Checkmarks:
 ✔️
 ❌
