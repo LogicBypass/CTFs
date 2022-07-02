@@ -134,6 +134,7 @@ A
 picoCTF{#########################}
 </pre>
 Hooray! We have a flag!
+<hr/>
 </details>
 
 ---
@@ -170,6 +171,7 @@ Hooray! We have a flag!
 
 	picoCTF{R****_N_*0***_********}
 Hooray! We have a flag!
+<hr/>
 </details>
 
 ---
@@ -209,6 +211,7 @@ Hooray! We have a flag!
 
     picoCTF{1*V3R*3L*_H4*D_B7*B9*79}
 Hooray! We have a flag!
+<hr/>
 </details>
 
 ---
@@ -248,6 +251,7 @@ Hooray! We have a flag!
 <br/>
   <code>picoCTF{************}</code><br/>
 Hooray! We have a flag!<br/>
+<hr/>
 </details>
 
 ---
@@ -287,10 +291,33 @@ Hooray! We have a flag!<br/>
 	<br/>
     Decode with ROT13 and get the flag:
     <code>picoCTF{C*r**_5***5_7*M*}</code>
+ <hr/>
+
+</details>
+
+---
+
+<details>
+  <summary><h2> 6. CVE-XXXX-XXXX ✔️ </h2></summary>
+  <h3>Description:</h3>
+	Enter the CVE of the vulnerability as the flag with the correct flag format:
+    <code>picoCTF{CVE-XXXX-XXXXX}</code> replacing XXXX-XXXXX with the numbers for the matching vulnerability.
+	<br/>
+	The CVE we're looking for is the first recorded remote code execution (RCE) vulnerability in 2021 in the Windows Print Spooler Service, which is available across desktop and server versions of Windows operating systems. The service is used to manage printers and print servers.<br/>
+	<br/>
+      
+  > Hint: We're not looking for the Local Spooler vulnerability in 2021...
+
+
+  ----
+  <h3>Reconnaissance & Exploitation:</h3>
+	Just search it on Google!
+<hr/>
  
 </details>
 
 ---
+
 
  Checkmarks:
 ✔️
