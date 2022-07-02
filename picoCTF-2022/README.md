@@ -252,6 +252,46 @@ Hooray! We have a flag!<br/>
 
 ---
 
+<details>
+  <summary><h2> 5.credstuff ✔️ </h2></summary>
+  <h3>Description:</h3>
+  	We found a leak of a blackmarket website's login credentials. Can you find the password of the user <code>cultiris</code> and successfully decrypt it?
+	<br/>
+	Download the leak  <a href=https://artifacts.picoctf.net/c/534/leak.tar>here.</a> <br/>
+	<br/>
+    The first user in <code>usernames.txt</code> corresponds to the first password in <code>passwords.txt</code>. The second user corresponds to the second password, and so on.<br/>
+    <br/>
+    
+  
+  > Hint: Maybe other passwords will have hints about the leak?
+
+
+  ----
+  <h3>Reconnaissance & Exploitation:</h3>
+	Download the file: <code>wget link-to-file</code><br/> 
+	Extract it :<code>tar -xf file</code><br/>
+	Search for <code>cultiris</code> and it's line number in <code>usernames.txt</code><br/>
+    <br/>
+	<pre>
+	cat usernames.txt | grep "cultiris" -n
+	Output:
+	>>> 378:cultiris
+	</pre>
+	<br/>
+	Now we need to search for this line in <code>passwords.txt</code> file. </br>
+	<pre>
+    sed '378!d' passwords.txt
+	Output:
+	>>> cvpbPGS{P7e1S_54I35_71Z3}
+	</pre>
+	<br/>
+    Decode with ROT13 and get the flag:
+    <code>picoCTF{C*r**_5***5_7*M*}</code>
+ 
+</details>
+
+---
+
  Checkmarks:
 ✔️
 ❌
