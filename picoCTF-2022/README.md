@@ -318,6 +318,18 @@ Hooray! We have a flag!<br/>
 
 ---
 
+<details>
+  <summary><h2> 7. Enhance! ✔️ </h2></summary>
+  <h3>Description:</h3>
+  <a href=https://artifacts.picoctf.net/c/138/drawing.flag.svg>Download this image file</a> and find the flag.<br/>
+
+  ----
+  <h3>Reconnaissance & Exploitation:</h3>
+	Search for strings in the file using <code>less [filename]</code> or <code>cat [filename]</code> or for better visibility use <code>nano [filename]</code>
+<hr/>
+</details>
+
+---
 
  Checkmarks:
 ✔️
